@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include"suppl.h"
+#include "suppl.h"
 #include "filters.h"
-#include"rotate.h"
-#include"compress.h"
-#include"decompress.h"
-#include"union.h"
+#include "rotate.h"
+#include "compress.h"
+#include "decompress.h"
+#include "union.h"
 
 int main(int argc, char *argv[])
 {
@@ -37,9 +37,6 @@ int main(int argc, char *argv[])
 
         // Write vector in a file
         FILE *f = fopen(argv[4], "wb");
-        // fprintf(f, "P6\n");------------------>segmentation error!
-        // fprintf(f, "%d %d\n", width, width);
-        // fprintf(f, "255\n");
 
         unsigned int count = 0;
         for (i = 0; i < index; i++)
